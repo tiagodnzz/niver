@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+
+        var countDownDate = new Date("June 22, 2020 00:00:00").getTime();
+
+        var x = setInterval(function () {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            var seconds = Math.floor((distance % (1000 * 60) / 1000));
+
+            document.getElementById("dday").innerHTML = " ♥ " + days + " dias ♥ " + hours + " hrs ♥ " + minutes + " min ♥ " + seconds + " seg ♥ ";
+
+            if (distance < 0) {
+                clearInterval(x);
+
+
+
+            }
+        }, 1000);
+
+    </script>
+</head>
+
+<body id="grad">
+    <main class="conteudo">
+        <div class="texto">
+            <h1>Coraçãooo Faltam Apenas</h1>
+        </div>
+        <div id="dday">
+        </div>
+        <div class="texto1">
+            <h2>Para o seu Aniversariooooo</h2>  
+        </div>
+        <div class="texto">
+            <h2>Uhuuuuuuuuuulll</h2>
+        </div>
+    </main>
+</body id>
+
+</html>
